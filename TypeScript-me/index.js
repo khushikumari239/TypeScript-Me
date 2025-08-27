@@ -19,12 +19,21 @@
 // Problem 3 🫶 - Return true or false based on if a user is 18+
 // Thing to learn - Type inference
 // Function name - isLegal
-function isLegal(age) {
-    if (age >= 18) {
-        return true;
-    }
-    else {
-        return false;
-    }
+// function isLegal (age  : number) {
+// if (age >= 18) {
+//     return true;  
+// }
+// else {
+//     return false
+// }
+// }
+// console.log (isLegal (1));
+// --------------------------------------------------
+// problem 4 🪻-------
+// Create a function that takes another function as input, and runs it after 1 second.
+function delayedCall(fn) {
+    setTimeout(fn, 1000);
 }
-console.log(isLegal(1));
+delayedCall(function () {
+    console.log("hello");
+});
