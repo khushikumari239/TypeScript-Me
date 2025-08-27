@@ -11,7 +11,20 @@
 // 2 💚 -----------
 // Thing to learn - How to assign a return type to a function
 // Write a function that calculates the sum of two functions
-function sum(a, b) {
-    return a + b;
+// function sum ( a : number , b : number )  {
+//     return a+b;
+// }
+// console .log (sum(2,3));
+// -----------------------------------------
+// Problem 3 🫶 - Return true or false based on if a user is 18+
+// Thing to learn - Type inference
+// Function name - isLegal
+function isLegal(age) {
+    if (age >= 18) {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
-console.log(sum(2, 3));
+console.log(isLegal(1));
